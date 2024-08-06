@@ -220,14 +220,14 @@ export default {
           range: selection.getRangeAt(0),
           selection: selection
         }
-        try {
-          if (this.editor.$textElem.elems[0].firstChild.firstChild.tagName === 'BR') {
-            this.editor.$textElem.elems[0].firstChild.removeChild(
-                this.editor.$textElem.elems[0].firstChild.firstChild
-            )
-          }
-        } catch (e) {
-        }
+        // try {
+        //   if (this.editor.$textElem.elems[0].firstChild.firstChild.tagName === 'BR') {
+        //     this.editor.$textElem.elems[0].firstChild.removeChild(
+        //         this.editor.$textElem.elems[0].firstChild.firstChild
+        //     )
+        //   }
+        // } catch (e) {
+        // }
         let fakeNode = document.createElement('span')
         fakeNode.className = 'fake-at'
         fakeNode.innerHTML = '@'
